@@ -136,9 +136,9 @@
                 return;
             }
             
-            // Check self collision
-            for (let segment of snake) {
-                if (head.x === segment.x && head.y === segment.y) {
+            // Check self collision (exclude head, only check body segments)
+            for (let i = 1; i < snake.length; i++) {
+                if (head.x === snake[i].x && head.y === snake[i].y) {
                     gameOver();
                     return;
                 }
