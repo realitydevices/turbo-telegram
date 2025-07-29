@@ -71,7 +71,9 @@
         const tileCount = canvas.width / gridSize;
 
         let snake = [
-            {x: 10, y: 10}
+            {x: 10, y: 10},
+            {x: 9, y: 10},
+            {x: 8, y: 10}
         ];
         let food = {};
         let dx = 0;
@@ -83,7 +85,7 @@
 
         // Initialize game
         function init() {
-            snake = [{x: 10, y: 10}];
+            snake = [{x: 10, y: 10}, {x: 9, y: 10}, {x: 8, y: 10}];
             dx = 0;
             dy = 0;
             score = 0;
@@ -97,8 +99,8 @@
             if (gameInterval) clearInterval(gameInterval);
             if (restartTimeout) clearTimeout(restartTimeout);
             
-            // Start game loop with 1 second interval
-            gameInterval = setInterval(gameLoop, 1000);
+            // Start game loop with 0.5 second interval (twice as fast)
+            gameInterval = setInterval(gameLoop, 500);
         }
 
         // Generate random food position
