@@ -6,6 +6,19 @@ A classic Snake game implementation that runs purely in the browser using HTML, 
 
 This is a simple, browser-based version of the classic Snake game. Control the snake to eat food and grow longer while avoiding collisions with walls and yourself.
 
+## Quickstart
+
+No dependencies required. Clone the repo and open the game in your browser:
+
+```bash
+git clone git@github.com:realitydevices/turbo-telegram.git
+cd turbo-telegram
+open index.html   # macOS
+# or: xdg-open index.html (Linux) / start index.html (Windows)
+```
+
+That's it. The game runs entirely in the browser with no build step.
+
 ## How to Play
 
 1. Open `index.html` in your web browser
